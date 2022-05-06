@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AJAX Moon</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" type="text/css" href="Jydz9AJAX-S21.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body onload="onload()">    
+    <div id = "columnsWrapper" class = "clear">
+            <h1>Mar Explorer</h1>
+            <hr>
+            
+            <div class = "column left">
+                <h2>Rover PhotoGraphs</h2>
+                
+                <p>Martian Sol</p>
+                <input type = "text" placeholder = "Martian Sol" id = "martianSol" min = "0" max = ""/>
+                
+                <input type="submit" id = "getMartian" onclick = "getMartian()"/>
+                
+                <p>Rover Camera</p>
+                <select name = "selectForm" id = "selectForm">
+                <option value="">Please select after Sol input</option>
+        
+                </select>
+                <input type="submit" id = "submit" onclick = "getPictures()"/>
+                
+                <p>Date</p>
+                <input type="date" id = "dateMax" name = "dateMax" min='1995-04-19' max='2020-01-01'>
+                <input type="submit" id = "submit" onclick = "photoOfDay()"/>
+                
+                <!-- <input name="age" value=" " /> -->
+
+            </div>
+            
+        
+            <div class = "middle" id = "middleimg">
+                <h2 id = "titleMid">Opportunity Photos</h2>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div id = "image">
+                    <img id = "picture" src ="" alt ="gets Pictures">
+                    
+                    <iframe id = "video" src = "" title = "YouTube" frameborder = "0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p id = "loading"></p>
+                </div>
+            </div>
+            
+        
+            <div class = "right" id = "info">
+                <h2 id = "title">Rover: Opportunity</h2>
+                <h3 id = "launchDate">Launch Date: 6-7-2003</h3>
+                <p id = "description">Description: Opportunity, also known as MER-B (Mars Exploration Rover –B) or MER-1, and nicknamed "Oppy", is a robotic rover that was active on Mars from 2004 until the middle of 2018. Launched on July 7, 2003, as part of NASA's Mars Exploration Rover program, itlanded in Meridiani Planum on January 25, 2004, three weeks after its twin Spirit (MER-A) touched down on the other side of the planet. With a planned 90-sol duration of activity (slightly less than 92.5 Earth days), Spirit functioned until it got stuck in 2009 and ceased communications in 2010, while Opportunity was able to stay operational for 5111 sols after landing, maintaining its power and key systems through continual recharging of its batteries using solar power, and hibernating during events such as dust storms to save power. This careful operation allowed Opportunity to exceed its operating plan by 14 years, 46 days (in Earth time), 55 times its designed lifespan. By June 10, 2018, when it last contacted NASA, the rover had traveled a distance of 45.16 kilometers (28.06 miles).</p>
+            </div>
+            
+        </div>
+    <script src = "Jydz9AJAX-S21.js"></script>
+</body>
+</html>
