@@ -1,0 +1,141 @@
+h1{
+    text-align: center; 
+    font-family: 'Source Serif Pro', serif;
+    color: white;
+    font-size: 50px;
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+h2{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 40px;
+    color: white;
+}
+/*Google image*/
+body{
+    margin: 0;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#columnsWrapper{
+    width: 95%;
+    position: relative;
+    border: 5px solid lightblue;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0 auto; 
+}
+p{
+    margin: 0;
+    color: white;
+    margin-top: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+#description{
+    font-size: 20px;
+    color: white;
+}
+#launchDate{
+    color: white;
+}
+
+.column{
+    float: left;
+    width: 350px;
+    height: 700px;
+    padding: 15px;
+    margin: 15px;
+    border: 3px solid #3399ff;
+    border-radius: 5px;
+}
+
+.middle{
+    float: left;
+    overflow: auto;
+    width: 680px;
+    height: 700px;
+    padding: 15px;
+    margin: 15px;
+    border: 3px solid #3399ff;
+    border-radius: 5px;
+}
+
+
+.right{
+    float: right;
+    overflow: auto;
+    width: 350px;
+    height: 700px;
+    padding: 15px;
+    margin: 15px;
+    border: 3px solid #3399ff;
+    border-radius: 5px;
+}
+
+.clear:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.prev,.next {
+  cursor: pointer;
+  position: relative;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next{
+    margin-left: 580px;
+}
+
+#image > img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#loading {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; 
+  visibility: hidden; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#picture{
+    visibility: hidden;
+}
+
+div{ 
+    color: white; 
+}
+
+
