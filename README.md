@@ -1,4 +1,6 @@
 # NasaRover
+## About
+Displays images based on the rover
 
 ## API
 Link to (Nasa Api)[https://api.nasa.gov/]   
